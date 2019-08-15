@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.flexflow(@justify, @align) {
+.flexit(@justify, @align) {
     display:flex;
     justify-content: @justify;
     align-items: @align;
@@ -17,14 +17,13 @@
     }
 }
 
-// .btn(width, height)
-.btn(@w, @h) {
-    color: white;
-    font-size: 1.5rem;
-    width: @w;
-    height: @h;
-    padding: 1rem;
-    background-color: @button-bg;
-    text-align: center;
-    border-radius: 10px;
+.btnStyler(@textAlign, @width) {
+  color: white;
+  font-size: 1.6rem;
+  width: @width;
+  height: 3.5rem;
+  padding: 1rem;
+  background-color: @button-bg;
+  text-align: @textAlign;
+  border-radius: 10px;
 }
