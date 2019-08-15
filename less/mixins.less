@@ -1,1 +1,18 @@
 // Mixins in here
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexflow(@justify, @align) {
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.responsive(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}

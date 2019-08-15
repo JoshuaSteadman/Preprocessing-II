@@ -168,6 +168,58 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  min-width: 1000px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media only screen and (max-width: 1000px) {
+  .navigation {
+    min-width: 100vw;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+}
+.navigation .wrapper {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .navigation .wrapper {
+    flex-direction: column;
+  }
+}
+.navigation .wrapper .navText {
+  margin-left: 10%;
+}
+@media only screen and (max-width: 500px) {
+  .navigation .wrapper .navText {
+    margin: auto;
+  }
+}
+.navigation .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+}
+@media only screen and (max-width: 500px) {
+  .navigation .wrapper ul {
+    margin: auto;
+  }
+}
+.navigation .wrapper ul a {
+  text-decoration: none;
+  color: #212529;
+  margin-right: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
