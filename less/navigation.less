@@ -1,34 +1,30 @@
 // Navigation Styles here
 .navigation {
-    min-width: 1000px;
+    .flexflow(space-evenly, center);
     border-bottom: 2px dashed @navigation-border;
-    .responsive(1000px, {min-width: 100vw; margin: auto;}); //SASS in LESS :D
-    .responsive(500px, {width: 100%;});
-    .wrapper {
-      height: 12vh;
-      .flexflow(space-between, center);
-      .responsive(500px, {flex-direction: column;});
-      .navText {
-        margin-left: 10%;
-        .responsive(500px, {margin: auto;});
+    height: 8rem;
+    .responsive(800px, {flex-direction: column;});
+    .navText {
+        margin-left: 25%;
+        .responsive(800px, {margin: auto;});
       }
-      h1 {
+      .navText {
       }
   
-      ul {
+      .navLinks {
         // Seperate our text and links
         .flexflow(space-between, center);
-        margin-right: 10%;
-        .responsive(500px, {margin: auto;});
+        margin-right: 25%;
+        .responsive(800px, {z-index: 1; margin: auto; justify-content: space-around;flex-wrap: wrap;}
   
         a {
           text-decoration: none;
           color: @shark;
-          margin-right: 30px;
+          margin-left: 2.5rem;
           font-size: 1.6rem;
           font-weight: bold;
+          margin-bottom: 3rem;
         }
       }
-    }
   }
   
