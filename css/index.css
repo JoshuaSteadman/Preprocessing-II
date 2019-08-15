@@ -221,9 +221,21 @@ img {
   font-weight: bold;
 }
 .footer {
+  min-width: 1000px;
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
+}
+@media only screen and (max-width: 1000px) {
+  .footer {
+    min-width: 100vw;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    width: 100%;
+  }
 }
 .footer p {
   text-align: center;
@@ -282,4 +294,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  color: white;
+  font-size: 1.5rem;
+  width: 80%;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #17A2B8;
+  text-align: center;
+  border-radius: 10px;
 }
