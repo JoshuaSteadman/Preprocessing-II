@@ -1,13 +1,23 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    .welcome-section {
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      border-bottom: 2px dashed @navigation-border;
+      p{
+        max-width: 90ch;
+      }
+
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +66,81 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      p {
+        max-width: 25ch;
+        .responsive(500px; { max-width: 65ch;
+        });
+      }
+
+      .btn {
+        .btnStyler(center, 80%);
+      }
     }
   }
-}// home
+}
+
+// home
+
+@media @mobile { // Task 5a
+  .home {
+    padding: 0 2.5rem;
+    width: 100%;
+
+    .content-section {
+      justify-content: space-evenly;
+      width: 100%;
+
+      .text-content {
+        width: 100%;
+        padding-left: none;
+      }
+
+      .img-content {
+        width: 100%;
+        padding-right: none;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .inverse-content {
+      display: flex;
+      flex-wrap: wrap-reverse;
+
+      .img-content {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text-content {
+        width: 100%;
+      }
+    }
+
+    .content-destination {
+      width: 100%;
+    }
+
+    .content-pick {
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 3rem 2rem 0 2rem;
+
+      .destination {
+        width: 98%;
+        margin-left: auto;
+
+        .btn {
+          .btnStyler(center, 96%);
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,38 @@
-// Navigation Styles here
+nav {
+  .flexit(space-evenly, center); // 
+  width: 100%;
+  height: 8rem;
+  border-bottom: 2px dashed @navigation-border;
+  margin: 0;
+
+  .navLinks {
+    a {
+      text-decoration: none;
+      color: @shark;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-left: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.responsive(@phone; { //Calls my mixin @media query max-width 500px; '.responsive(@maxWidth; {text-align: center;});'  <-- Short Usage Example
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    .navText {
+      width: 100%;
+    }
+
+    .navLinks {
+      a {
+        margin-left: none;
+        font-size: 1.3rem;
+      }
+      margin-right: 4rem;
+    }
+  }
+});
