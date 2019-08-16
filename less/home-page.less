@@ -68,6 +68,8 @@
       margin-bottom: 30px;
       p {
         max-width: 25ch;
+        .responsive(500px; { max-width: 65ch;
+        });
       }
 
       .btn {
@@ -79,7 +81,7 @@
 
 // home
 
-@media @mobile {
+@media @mobile { // Task 5a
   .home {
     padding: 0 2.5rem;
     width: 100%;
@@ -136,7 +138,7 @@
         margin-left: auto;
 
         .btn {
-          .btnStyler(center, 98%);
+          .btnStyler(center, 96%);
         }
       }
     }
